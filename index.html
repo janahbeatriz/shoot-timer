@@ -67,6 +67,9 @@ button,input{font:inherit;color:inherit}
 /* ---- header sparkle ---- */
 .deco{display:flex;gap:10px;align-items:center;justify-content:center;margin:2px 0 14px}
 .deco svg{width:26px;height:26px;image-rendering:pixelated}
+.deco .tag small{font-weight:500;font-size:.8rem;color:var(--muted);margin-left:4px}
+.foot{text-align:center;font-size:.85rem;color:var(--muted);margin:10px 0 0}
+.foot svg{width:12px;height:12px;vertical-align:-1px;margin-left:4px}
 .deco .tag{background:var(--win);border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);padding:2px 12px;font-weight:700;font-size:1.1rem}
 
 /* ---- shoot clock ---- */
@@ -133,7 +136,7 @@ button,input{font:inherit;color:inherit}
 
   <div class="deco" aria-hidden="true">
     <svg viewBox="0 0 9 9" shape-rendering="crispEdges"><path fill="#FF5FA2" d="M1 1h2v1h1v1h1V2h1V1h2v1h1v3H8v1H7v1H6v1H5v1H4V8H3V7H2V6H1V5H0V2h1z"/><path fill="#fff" d="M2 2h1v1H2z"/></svg>
-    <span class="tag">shoot timers</span>
+    <span class="tag">shoot timers <small>by beatwizy</small></span>
     <svg viewBox="0 0 9 9" shape-rendering="crispEdges"><path fill="#FFD84D" d="M4 0h1v3h1v1h3v1H6v1H5v3H4V6H3V5H0V4h3V3h1z"/></svg>
   </div>
 
@@ -185,6 +188,8 @@ button,input{font:inherit;color:inherit}
   </section>
 
   <section class="list" id="list" aria-live="polite"></section>
+
+  <footer class="foot">hope you like the app! xoxo, bubble.bea<svg viewBox="0 0 9 9" shape-rendering="crispEdges" aria-hidden="true"><path fill="#FF5FA2" d="M1 1h2v1h1v1h1V2h1V1h2v1h1v3H8v1H7v1H6v1H5v1H4V8H3V7H2V6H1V5H0V2h1z"/></svg></footer>
 </div>
 
 <div class="alarm" id="alarm" role="alertdialog" aria-modal="true" aria-labelledby="alarmTitle">
