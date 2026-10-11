@@ -629,7 +629,8 @@ button,input{font:inherit;color:inherit}
     voicePref = e.target.value;
     try{ localStorage.setItem(VOICE_KEY, voicePref); }catch(err){}
     unlock();
-    speak("Hey, gorgeous! Ready to slay this shoot?", ["gorgeous"]);
+    const busy = talking || timers.some(t=>t.state==="running" || (t.state==="done" && !silenced.has(t.id)));
+    if(!busy) speak("Hey, gorgeous! Ready to slay this shoot?", ["gorgeous"]);
   });
 
   load(); render(); paintWake(); paintLen(); tick();
